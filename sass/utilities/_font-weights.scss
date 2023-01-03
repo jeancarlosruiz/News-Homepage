@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 .fw-regular {
   font-weight: $fw-400;
@@ -6,4 +6,8 @@
 
 .fw-bold {
   font-weight: $fw-700;
+}
+
+.fw-extra-bold {
+  font-weight: $fw-800;
 }

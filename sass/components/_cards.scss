@@ -1,7 +1,10 @@
 @use '../abstracts/' as *;
 
-.card {
-  display: grid;
-  gap: 1rem;
-  padding: $card-body-padding;
+.cards {
+  margin-block-end: size(80);
+  &-box {
+    height: 8.063rem;
+    display: flex;
+    gap: size(30);
+  }
 }

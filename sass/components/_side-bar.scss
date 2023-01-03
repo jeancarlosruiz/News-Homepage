@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.side-bar {
+  padding-inline: size(20);
+  padding-block: size(24);
+
+  &-box:not(:last-child) {
+    border-bottom: 1px solid clr(neutral, 200);
+  }
+}

@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.grid-hero {
+  display: grid;
+  gap: size(24);
+}
