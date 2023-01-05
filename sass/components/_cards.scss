@@ -2,9 +2,23 @@
 
 .cards {
   margin-block-end: size(80);
-  &-box {
-    height: 8.063rem;
-    display: flex;
-    gap: size(30);
+
+  @include mq(medium) {
+    margin-block-end: 0;
+  }
+}
+
+.cards-box {
+  height: 8.063rem;
+  display: flex;
+  gap: size(30);
+  cursor: pointer;
+
+  a {
+    transition: all 275ms ease;
+  }
+
+  &:is(:hover, :focus) a {
+    color: clr(primary, 400);
   }
 }

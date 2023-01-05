@@ -7,4 +7,17 @@
   &-box:not(:last-child) {
     border-bottom: 1px solid clr(neutral, 200);
   }
+
+  @include mq(medium) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  a {
+    transition: all 275ms ease;
+
+    &:is(:hover, :focus) {
+      color: clr(primary, 400);
+    }
+  }
 }

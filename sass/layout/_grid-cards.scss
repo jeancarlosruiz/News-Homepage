@@ -8,4 +8,13 @@
   grid-template-rows: repeat(3, auto);
   row-gap: var(--grid-row-gap, $grid-gap);
   column-gap: var(--grid-column-gap, $grid-gap);
+
+  @include mq(medium) {
+    grid-column: 1/ 4;
+    grid-row: 4 / -1;
+
+    --grid-row-gap: #{size(30)};
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
 }
