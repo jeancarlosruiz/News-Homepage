@@ -1,0 +1,65 @@
+@use '../abstracts/' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: size(28);
+  padding-block-end: size(32);
+
+  @include mq(medium) {
+    padding-block-start: size(90);
+    padding-block-end: size(60);
+  }
+
+  &-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 80vh;
+    background-color: clr(neutral, 100);
+    z-index: 2;
+
+    &.open {
+      display: flex;
+      backdrop-filter: blur(2px);
+    }
+
+    @include mq(medium) {
+      display: block;
+      position: inherit;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.nav-links {
+  --flex-column-gap: #{size(24)};
+
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  column-gap: var(--flex-column-gap, $flex-group-gap);
+  row-gap: var(--flex-row-gap, $flex-group-gap);
+  margin-block-start: size(148);
+
+  & li {
+    transition: all 275ms ease-in;
+  }
+
+  & li:is(:hover, :focus) {
+    color: clr(primary, 400);
+  }
+
+  @include mq(medium) {
+    --flex-row-gap: size(40);
+
+    width: auto;
+    flex-direction: row;
+    margin-block-start: 0;
+  }
+}

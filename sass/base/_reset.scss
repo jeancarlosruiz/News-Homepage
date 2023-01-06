@@ -19,6 +19,10 @@ svg {
   max-width: 100%;
 }
 
+ul,
+li,
 a {
+  list-style: none;
   text-decoration: none;
+  color: inherit;
 }
