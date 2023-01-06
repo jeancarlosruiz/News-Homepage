@@ -1,5 +1,3 @@
-'use strict';
-
 // Selecting elements
 const hamburgerBtn = document.querySelector('.hamburger-btn');
 const headerNav = document.querySelector('.header-nav');
