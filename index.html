@@ -14,14 +14,29 @@
   </head>
 
   <body>
-    <!-- 
-    Home
-    New
-    Popular
-    Trending
-    Categories 
-    -->
+    <!-- HEADER -->
+    <header class="header | container mx-auto">
+      <div>
+        <img src="assets/images/logo.svg" alt="Logo" />
+      </div>
+      <a class="hamburger-btn" href="#">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <nav class="header-nav">
+        <ul class="nav-links fs-400 clr-neutral-900">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- CONTENT PAGE -->
     <main class="container | mx-auto grid-main">
+      <!-- HERO SECTION -->
       <section class="hero-section | grid-hero">
         <picture>
           <source
@@ -44,6 +59,7 @@
           </div>
         </div>
       </section>
+      <!-- SIDE BAR -->
       <section class="side-bar | bg-neutral-900">
         <p class="fs-800 fw-bold clr-primary-400 margin-block-end-34">New</p>
         <div class="flex-group-2">
@@ -84,6 +100,7 @@
           </div>
         </div>
       </section>
+      <!-- CARDS SECTION -->
       <section class="cards | grid-cards">
         <div class="cards-box">
           <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
@@ -129,6 +146,7 @@
         </div>
       </section>
     </main>
+    <div class="overlay hidden"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
